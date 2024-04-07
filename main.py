@@ -5,3 +5,13 @@ def saludo_personalizado():
 
 # Llamar a la función
 saludo_personalizado()
+
+
+# Función para contar hasta un número específico
+def contador_numeros():
+    numero = int(input("Ingresa un número entero: "))  # Captura la entrada y conviértela a entero
+    for i in range(1, numero + 1):  # Bucle desde 1 hasta el número ingresado
+        print(i)  # Imprime cada número
+
+# Llamar a la función
+contador_numeros()
