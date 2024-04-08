@@ -15,3 +15,27 @@ def contador_numeros():
 
 # Llamar a la función
 contador_numeros()
+
+# Función para realizar operaciones aritméticas básicas
+def calculadora_basica():
+    num1 = float(input("Ingresa el primer número: "))  # Primer número
+    num2 = float(input("Ingresa el segundo número: "))  # Segundo número
+    operacion = input("Ingresa la operación (suma, resta, multiplicación, división): ")  # Operación deseada
+
+    # Realizar la operación y mostrar el resultado
+    if operacion == "suma":
+        print(f"El resultado de {num1} + {num2} es {num1 + num2}")
+    elif operacion == "resta":
+        print(f"El resultado de {num1} - {num2} es {num1 - num2}")
+    elif operacion == "multiplicación":
+        print(f"El resultado de {num1} * {num2} es {num1 * num2}")
+    elif operacion == "división":
+        if num2 != 0:
+            print(f"El resultado de {num1} / {num2} es {num1 / num2}")
+        else:
+            print("Error: División por cero no permitida.")
+    else:
+        print("Operación no reconocida. Por favor, intenta de nuevo.")
+
+# Llamar a la función
+calculadora_basica()
